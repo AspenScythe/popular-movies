@@ -18,7 +18,7 @@ public class Movie {
     /* Movie release date */
     private String releaseDate;
     /* An array of integers showing Movie genres */
-    private List<Float> genreIds;
+    private List<Integer> genreIds;
     /* Original title of Movie */
     private String originalTitle;
     /* Original Movie language */
@@ -28,13 +28,13 @@ public class Movie {
     /* Path of Movie backdrop */
     private String backdropPath;
     /* Calculated popularity value */
-    private float popularity;
+    private double popularity;
     /* Total vote count for Movie */
     private int voteCount;
     /* Related videos */
     private boolean video;
     /* Vote average for Movie */
-    private float voteAverage;
+    private double voteAverage;
 
 
     /**
@@ -44,9 +44,9 @@ public class Movie {
     }
 
     public Movie(int id, String posterPath, boolean adult, String overview, String releaseDate,
-                 List<Float> genreIds, String originalTitle, String originalLanguage, String title,
-                 String backdropPath, float popularity, int voteCount, boolean video,
-                 float voteAverage) {
+                 List<Integer> genreIds, String originalTitle, String originalLanguage, String title,
+                 String backdropPath, double popularity, int voteCount, boolean video,
+                 double voteAverage) {
         this.id = id;
         this.posterPath = posterPath;
         this.adult = adult;
@@ -103,11 +103,11 @@ public class Movie {
         this.releaseDate = releaseDate;
     }
 
-    public List<Float> getGenreIds() {
+    public List<Integer> getGenreIds() {
         return genreIds;
     }
 
-    public void setGenreIds(List<Float> genreIds) {
+    public void setGenreIds(List<Integer> genreIds) {
         this.genreIds = genreIds;
     }
 
@@ -143,11 +143,11 @@ public class Movie {
         this.backdropPath = backdropPath;
     }
 
-    public float getPopularity() {
+    public double getPopularity() {
         return popularity;
     }
 
-    public void setPopularity(float popularity) {
+    public void setPopularity(double popularity) {
         this.popularity = popularity;
     }
 
@@ -167,11 +167,11 @@ public class Movie {
         this.video = video;
     }
 
-    public float getVoteAverage() {
+    public double getVoteAverage() {
         return voteAverage;
     }
 
-    public void setVoteAverage(float voteAverage) {
+    public void setVoteAverage(double voteAverage) {
         this.voteAverage = voteAverage;
     }
 }
